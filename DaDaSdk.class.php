@@ -10,9 +10,9 @@ class DaDaSdk
 {
     private $URL = 'http://newopen.qa.imdada.cn';
 //    private $URL = 'http://newopen.imdada.cn';
-    private $APP_KEY = 'dada5e960fe94d5db01';
+    private $APP_KEY = '';
     private $VERSION = '1.0';
-    private $APP_SECRET = 'b70ab2c63721bb739ac92eb1e03ed068';
+    private $APP_SECRET = '';
     private $API_ADDORDER = '/api/order/addOrder';
     private $API_FETCHORDER = '/api/order/fetch';
     private $API_CITY_LIST = "/api/cityCode/list";
@@ -55,11 +55,11 @@ class DaDaSdk
 //        $data['cargo_price'] = "11.2";
 //        $data['is_prepay'] = "0";
 //        $data['expected_fetch_time'] = time()+3600;
-//        $data['receiver_name'] = "仝帅";
-//        $data['receiver_address'] = "南稍门中贸广场";
-//        $data['receiver_phone'] = "13572420121";
-//        $data['receiver_lat'] = "108.952931";
-//        $data['receiver_lng'] = "34.248759";
+//        $data['receiver_name'] = "";
+//        $data['receiver_address'] = "";
+//        $data['receiver_phone'] = "";
+//        $data['receiver_lat'] = "";
+//        $data['receiver_lng'] = "";
 //        $data['callback'] = "http://www.weilai517.com/index.php/Home/Test/callback/id/12321";
         return self::getResult($this->API_ADDORDER,$data);
     }
@@ -98,11 +98,11 @@ class DaDaSdk
 //        $data['cargo_price'] = "11.2";
 //        $data['is_prepay'] = "0";
 //        $data['expected_fetch_time'] = time()+3600;
-//        $data['receiver_name'] = "仝帅";
-//        $data['receiver_address'] = "南稍门中贸广场";
-//        $data['receiver_phone'] = "13572420121";
-//        $data['receiver_lat'] = "108.952931";
-//        $data['receiver_lng'] = "34.248759";
+//        $data['receiver_name'] = "";
+//        $data['receiver_address'] = "";
+//        $data['receiver_phone'] = "";
+//        $data['receiver_lat'] = "";
+//        $data['receiver_lng'] = "";
 //        $data['callback'] = "http://www.weilai517.com/index.php/Home/Test/callback/id/12321";
         return self::getResult($this->API_QUERYDELIVERFEE,$data);
     }
